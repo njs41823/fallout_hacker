@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fallout Hacker</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div>
+            <div id="input" class="container-fluid">
+                <h4>Enter words below, separated with returns:</h4>
+                <div>
+                    <textarea id="clues" rows=15 cols=15></textarea>
+                </div>
+                <div>
+                    <button id="start" type="button" class="btn">Start</button>
+                </div>
+            </div>
+            <div id="hacking" class="container-fluid" style="display:none">
+                <h4 id="prompt">Select the likeness score of a word to continue</h4>
+                <div id="wordList" class="row">
+                    <!-- words and likeness buttons go here -->
+                </div>
+                <button id="reset" type="button" class="btn">Reset</button>
+            </div>
+        </div>
+
+    </body>
+    <!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+</html>
